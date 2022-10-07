@@ -33,6 +33,3 @@ The entire text block relative to the image is centered.
 "read more" with the icon - this is a link, on hover, the arrow icon moves to the right to 5 pixels
 On footer section. Just like the header, has their own maximum width of 1760px, while the entire site has 1200px.
 Flexible site, minimum size 991px
-
-
-
