@@ -1,0 +1,391 @@
+@font-face {
+    font-family: 'gilroy';
+    src: url('../fonts/gilroy-regular-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url('../fonts/gilroy-black-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy-black-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url('../fonts/gilroy-bold-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url('../fonts/gilroy-medium-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+:root {
+    --white:#FFFFFF;
+    --yellow:#FBD784;
+    --dark:#0B1D26;
+    --blue:turquoise;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.body {
+    font-family: 'gilroy', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    background-color:var(--dark) ;
+    background-image: url(../img/bg.png) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+.wrapper {
+    margin: 0 auto;
+    max-width:1920px ;
+    min-width: 991px;
+    padding: 0 80px;
+}
+
+.container {
+    padding: 0 80px;
+    margin: 0 auto;
+    max-width:1200px ;
+    min-width: 991px;  
+}
+
+.box {
+    display: none;
+}
+
+.header {
+    padding: 66px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1760px;
+}
+
+.logo img {
+    display: block;
+}
+
+.header__menu {
+    padding: 0 18px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color:var(--white);
+    text-decoration: none;
+}
+
+.header__menu:hover {
+    color: var(--yellow);
+}
+
+.header__account {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    font-size: 17px;
+    line-height: 21px;
+    color:var(--white);
+}
+
+.header__account svg {
+    margin: 0 10px;
+}
+
+.header__account:hover {
+    color: var(--yellow);
+}
+
+.header__account:hover path {
+    fill: var(--yellow);
+}
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    padding-top:114px;
+    padding-bottom:858px ;  
+}
+
+.about__container {
+    max-width: 950px;
+    position: relative;
+}
+
+.title-text {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color:var(--yellow);
+    margin-bottom: 32px;
+    display: inline-flex;
+    align-items:center ;
+}
+
+.title-text::before {
+    display: inline-flex;
+    margin-right: 25px;
+    content: '';
+    width: 72px;
+    height: 2px;
+    background-color: var(--yellow);
+}
+
+.about__title {
+    font-family: 'Times New Roman', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 88px;
+    line-height: 100px;
+    text-transform: capitalize;
+    color: var(--white);
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.btn {
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    display: inline-flex;
+    font-size: 18px;
+    line-height: 22px;
+    color:var(--white);
+    text-decoration: none;
+    margin-right: auto;   
+}
+
+.btn svg {
+    margin: 0 16px;
+}
+
+.btn:hover path {
+    fill:var(--blue);
+}
+
+.hike__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.hike__item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.hike__item-info {
+    width: 50%;
+    align-self: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.hike__item-info-position {
+    position: absolute;
+    font-weight: bold;
+    font-size: 240px;
+    line-height: 240px;
+    color:var(--white);
+    opacity: 0.1;
+    top: -110px;
+    left: -50px;
+}
+
+.hike__info-title {
+    font-family: 'Times New Roman', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 74px;
+    color: var(--white);
+}
+
+.hike__info-text {
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--white);
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.hike__info-link {
+    margin-right:auto ;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--yellow);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 27px;
+}
+
+.hike__info-link svg {
+    margin-left: 16px;
+}
+
+.hike__info-link:hover,
+.btn:hover {
+    color: var(--blue);
+}
+
+.hike__info-link:hover path,
+.hike__info-link:hover svg {
+    margin-left: 21px;
+    fill: var(--blue);
+}
+
+.hike__item-picture {
+    width: 40%;
+}
+
+.hike__item-picture img {
+    object-fit: cover;
+    height: 720px;
+    width: 100%;
+}
+
+.footer-wrap {
+    display: flex;
+    margin: 0 -80px;
+}
+
+.footer__item-wrap {
+    padding: 0 80px;
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__item {
+    max-width: 300px;  
+}
+
+.footer__item-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--yellow);
+    margin-bottom: 8px;
+}
+
+.footer__item ul {
+    padding: 0;
+}
+
+.footer__item  li {
+   list-style: none;
+   padding-top: 16px;
+}
+
+.footer__item  a,
+.footer__item-text,
+.footer-end {   
+    margin-top: 32px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--white);
+}
+
+.left {
+    margin-right: auto;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.footer__item  a:hover {
+    color: var(--blue);
+}
+
+.opacity {
+    opacity: 0.5;
+    margin-bottom: 52px;
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    padding:0;
+}
+
+.scroll-wrap {
+    display: flex;
+    position: fixed;
+    top: 30%;   /* Потому что при скролле вниз, наезжает на блок в футере и это не красиво */
+    right: 80px;
+}
+
+.scroll li {
+    height: 60px;
+    list-style: none;
+    display: flex;
+    align-self: flex-end;
+}
+
+.scroll__button {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    color:var(--white);
+    align-self: flex-end;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.scroll__button::after {
+    width: 3px;
+    height: 60px;
+    display: inline-flex;
+    margin-left: 32px;
+    opacity: 0.5;
+    content: '';
+    background-color: var(--white);
+}
+
+.scroll__button:hover {
+    color:var(--yellow)
+}
+
+.scroll__button:hover::after {
+    background-color: var(--white);
+    opacity: 1;
+}
