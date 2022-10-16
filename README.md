@@ -19,18 +19,18 @@
 <li>Сайт резиновый, минимальный размер 991px</li>
   </ul>
 
-I wrote HTML code in accordance with Statement of Work:
+  Write HTML code according to the Statement of Work:
 <ul>
 <li>Use local font</li>
-<li>Write CSS by making use of BEM</li>
+<li>Write CSS using BEM</li>
 <li>Background image must cover the body completely + background color</li>
 <li>On header section. Center menu, hover to your liking</li>
-<li>Scroll down with arrow - anchor to block 01</li>
-<li>Navigation block right on the screen - menu anchor to relevant sections. It is fixed and always visible on the screen. Hover is shown on the "Start" item.</li>
+<li>Scroll down with arrow is an anchor to block 01</li>
+<li>Navigation block  on the right on the first screen is the anchor menu to the relevant sections. It is fixed and always visible on the screen. Hover is shown on the "Start" item.</li>
 <li>Three blocks with text and an image are structurally the same.</li>
-<li>The entire text block relative to the image is centered.</li>
+<li>The entire text block is centered relative to the image .</li>
 <li>«01»– absolutely positioned text</li>
 <li>«GET Started» – just text</li>
-<li>"read more" with the icon - this is a link, on hover, the arrow icon moves to the right to 5 pixels</li>
-<li>On footer section. Just like the header, has their own maximum width of 1760px, while the entire site has 1200px.</li>
+<li>"read more" with the icon - this is a link. The arrow icon moves to the right by 5 pixels on hover </li>
+<li>On footer section. Just like the header, it has their own maximum width of 1760px, while the entire site has 1200px.</li>
 <li>Flexible site, minimum size 991px</li></ul>
